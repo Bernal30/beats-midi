@@ -12,12 +12,9 @@ function playSonido (IdElementoAudio) {
 //lista de objetos con la clase '.tecla' o sea lso botones de cada sonido 
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-/* el contador tendra el valor de los indices de cada elemento de la lista respectivamente para cada ciclo del while
-cuando contador = 0 el bucle trabajara con el primer elemento de la lista
-cuando contador = 1 el bucle trabajara con el segundo elemento de la lista */
-let contador = 0
-while (contador < 9) {
-    const tecla = listaDeTeclas[contador]
+//el bucle for optimiza el codigo en caso de querer agregar más instrumentos, por ende más teclas y por ende el length del array crece
+for (let contador = 0; contador < listaDeTeclas.length; contador++) {
+    const tecla = listaDeTeclas[contador];
     const instrumento = tecla.classList[1];
     const idAudio = `#sonido_${instrumento}`;
     console.log(idAudio);
@@ -25,10 +22,13 @@ while (contador < 9) {
     tecla.onclick = function (){
         return playSonido(idAudio);
     }
-    contador++;
+
+    //captura el evento cuando una tecla sea presionada (onkeydown) y una función anonima retorne la incorporación de la clase 'activa' para la tecla
+    tecla.onkeydown = function (){
+        tecla.classList.add('activa');
+    }
+
+    tecla.onkeyup = function (){
+        tecla.classList.remove('active');
+    }
 }
-
-console.log(listaDeTeclas);
-
-//para guardar el valor de una función en un atributo se deben omitir los parentecis y así no se ejecuta inmediatamente
-//document.querySelector('.tecla_pom').onclick = playSonidoPom;
