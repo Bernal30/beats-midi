@@ -1,9 +1,11 @@
-/* document.querySelector('#sonido_tecla_pom').play();
+/* 
+document.querySelector('#sonido_tecla_pom').play();
 esta linea de codigo  ejecutara la función play() del objeto seleccionado indefinidamente 
 cuando se carge la pagina web debido al script, esto provocara un error en el que la función play
 fallara por que el usuario no interactuó con el documento primero. Se puede solucionar esto colocando
 la linea de codigo en una función que sea llamada cuando el usuario interactue con el documento
-por ejemplo cuando de click en un boton. */
+por ejemplo cuando de click en un boton.
+*/
 
 function playSonido (IdElementoAudio) {
     return document.querySelector(IdElementoAudio).play();
@@ -32,3 +34,12 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
         tecla.classList.remove('active');
     }
 }
+
+
+/* addEventListener('keydown', function (evento){
+    if ((evento.code === 'Enter') || (evento.code === 'Space')) {
+        tecla.onkeydown = function (){
+            tecla.classList.add('activa');
+        }
+    }
+}); */
