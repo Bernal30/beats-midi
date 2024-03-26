@@ -1,27 +1,32 @@
 ## Proyecto del Curso de JavaScript para Web: Crea páginas dinámicas
 
-El proyecto del curso es el Alura Midi que es un instrumento musical de interfaz digital al cual le agregaremos las funcionalidades en el transcurso del curso. 
+El proyecto del curso es Beats Midi. Es un instrumento musical de interfaz digital al cual le agregaremos las funcionalidades utilizando estructuras de repetición, beneficiandonos de las funciones while y for de javascript.
 
  
-## Comenzando 🚀
+## Objetivo 🚀
 
-Este repositorio contiene varias Branch. 
+Para la creación de la interfaz digital funcional es necesario crear un programa en cuyo codigo fuente haya una estructura de repetición para cada uno de los nueve botones que haran sonar un intstrumento diferente. Se obtendran dos resultados en este repositorio y cada uno mostrado en dos ramas diferentes:
 
-Cada Branch esta identificada con el nombre aula y el numero del aula correspondiente. 
+- **uso-bucle-while**
 
-Ejemplo:  **aula-1**
+    En esta rama se hara uso del bucle ```while``` para la *estructura de repetición*.
 
-*En la rama principal (main) se encuentra el código base del proyecto para que pueda descargarlo e ir construyendo el codigo con el pasar de las aulas.*
+- **uso-bucle-for**
 
-### Pre-requisitos y uso 📋
+    En esta rama se hara uso del bucle ```for``` para la *estructura de repetición*.
 
-Descarga el código que necesites seleccionando la Branch dentro de este repositorio y ábrelo con tu editor de código favorito. 
+### Uso de Beats-MIDI 📋
+
+La interfaz es simple: habra nueve botones en el centro de la pantalla (Pom, Clap, Tim, Puff, Splash, Toim, Psh, Tic y Tom) al dar click en uno de ellos se reproducira un instrumento musical distinto. 
 
 
 ---
- Con :blue_heart: 
-- [Alura Latam](https://www.aluracursos.com/) 
-- [Instructora: Jeanmarie Quijada](https://github.com/JeanmarieAluraLatam) 
+
+- Estudiante del curso: [Alan Bernal](https://github.com/Bernal30)
+ 
+- Aprendizaje proporcionado en la plataforma de [Alura Latam](https://www.aluracursos.com/) 
+
+- Impartido por [Jeanmarie Quijada](https://github.com/JeanmarieAluraLatam) 
 
 
 
