@@ -37,8 +37,8 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
             //se deja de presionar la tecla Enter o la tecla Space se remueve la clase 'activa'
             tecla.onkeyup = function (){
-                tecla.classList.remove('activa')
-            };   
+                tecla.classList.remove('activa');
+            }  
         }
-    };
+    }
 }
