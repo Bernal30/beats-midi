@@ -17,7 +17,7 @@ Para la creación de la interfaz digital funcional es necesario crear un program
 
 ### Uso de Beats-MIDI 📋
 
-La interfaz es simple: habra nueve botones en el centro de la pantalla (Pom, Clap, Tim, Puff, Splash, Toim, Psh, Tic y Tom) al dar click en uno de ellos se reproducira un instrumento musical distinto. 
+La interfaz es simple: habra nueve botones en el centro de la pantalla (Pom, Clap, Tim, Puff, Splash, Toim, Psh, Tic y Tom) al dar click en uno de ellos se reproducira un instrumento musical distinto. Tambien se puede respoducir el sonido del instrumento con la tecla ```Enter``` y la tecla ```Espacio``` si te colocas por encima de los botones con el ```tabulador```.
 
 
 ---

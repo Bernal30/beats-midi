@@ -26,20 +26,19 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     }
 
     //captura el evento cuando una tecla sea presionada (onkeydown) y una función anonima retorne la incorporación de la clase 'activa' para la tecla
-    tecla.onkeydown = function (){
-        tecla.classList.add('activa');
-    }
+    tecla.onkeydown = function (event){
+        //si se presiona la tecla Enter o la tecla Space
+        if ((event.code === 'Enter') || (event.code === 'Space')) {
+            //aparece en la consola el codeValue de la tecla Enter o de la tecla Space 
+            console.log(event.code);
 
-    tecla.onkeyup = function (){
-        tecla.classList.remove('active');
-    }
-}
-
-
-/* addEventListener('keydown', function (evento){
-    if ((evento.code === 'Enter') || (evento.code === 'Space')) {
-        tecla.onkeydown = function (){
+            //se añade la calse 'activa' a la tecla
             tecla.classList.add('activa');
+
+            //se deja de presionar la tecla Enter o la tecla Space se remueve la clase 'activa'
+            tecla.onkeyup = function (){
+                tecla.classList.remove('activa')
+            };   
         }
-    }
-}); */
+    };
+}
