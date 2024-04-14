@@ -16,10 +16,14 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 
 //el bucle for optimiza el codigo en caso de querer agregar más instrumentos, por ende más teclas y por ende el length del array crece
 for (let contador = 0; contador < listaDeTeclas.length; contador++) {
+    //la tecla es asignada al elemento del array deacuerdo a su posición en el mismo array
     const tecla = listaDeTeclas[contador];
+    //el instrumento es asignado a la segunda clase del array de clases clases del elemento tecla
     const instrumento = tecla.classList[1];
+    //se construye el id de cada audio conforme el for recorre el array
     const idAudio = `#sonido_${instrumento}`;
     console.log(idAudio);
+    
     //para el atributo onclick se utiliza una función anonima en la que se llamara a la función playSonido()
     tecla.onclick = function (){
         return playSonido(idAudio);
