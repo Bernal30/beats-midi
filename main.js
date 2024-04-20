@@ -18,7 +18,7 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     //la tecla es asignada al elemento del array deacuerdo a su posición en el mismo array
     const tecla = listaDeTeclas[contador];
-    //el instrumento es asignado a la segunda clase del array de clases clases del elemento tecla
+    //el instrumento es asignado a la segunda clase del array de clases del elemento tecla
     const instrumento = tecla.classList[1];
     //se construye el id de cada audio conforme el for recorre el array
     const idAudio = `#sonido_${instrumento}`;
@@ -39,7 +39,7 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
             //se añade la calse 'activa' a la tecla
             tecla.classList.add('activa');
 
-            //se deja de presionar la tecla Enter o la tecla Space se remueve la clase 'activa'
+            //se deja de presionar el boton Enter o el boton Space entonces se remueve la clase 'activa'
             tecla.onkeyup = function (){
                 tecla.classList.remove('activa');
             }  
